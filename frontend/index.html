@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تريدات روبلوكس</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.moyasar.com/mpf/1.6.0/moyasar.js"></script>
+<link rel="stylesheet" href="https://cdn.moyasar.com/mpf/1.6.0/moyasar.css">
+</head>
+<body>
+<div id="authBox" class="glass center">
+<h2>🚀 تسجيل الدخول</h2>
+<input id="loginEmail" placeholder="البريد الإلكتروني">
+<input id="loginPass" type="password" placeholder="كلمة المرور">
+<button onclick="login()">دخول</button>
+<p onclick="showRegister()">إنشاء حساب</p>
+<p onclick="forgotPassword()">نسيت كلمة المرور؟</p>
+</div>
+
+<div id="registerBox" class="glass center hidden">
+<h2>🔥 إنشاء حساب</h2>
+<input id="regUser" placeholder="اسم المستخدم">
+<input id="regEmail" placeholder="البريد الإلكتروني">
+<input id="regPass" type="password" placeholder="كلمة المرور">
+<input id="regPass2" type="password" placeholder="تأكيد كلمة المرور">
+<button onclick="register()">تسجيل</button>
+<p onclick="showLogin()">رجوع</p>
+</div>
+
+<div id="main" class="hidden">
+<header>
+<h1>⚡ سوق روبلوكس</h1>
+<button onclick="logout()">خروج</button>
+</header>
+<div id="products" class="products"></div>
+</div>
+
+<div id="addBtn" class="floating hidden" onclick="openAdd()">+</div>
+
+<div id="addBox" class="glass hidden">
+<h3>إضافة منتج</h3>
+<input id="pName" placeholder="اسم المنتج">
+<input id="pPrice" placeholder="السعر">
+<select id="pMethod">
+<option>تريد</option>
+<option>هدية</option>
+<option>مجموعة</option>
+</select>
+<input type="file" id="pImage">
+<button onclick="addProduct()">نشر</button>
+</div>
+
+<div id="payBox" class="glass hidden">
+<div class="mysr-form"></div>
+</div>
+
+<div id="robloxBox" class="glass hidden">
+<input id="robloxUser" placeholder="اسمك في روبلوكس">
+<button onclick="confirmOrder()">تأكيد</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
